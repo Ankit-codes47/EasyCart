@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Orders | EasyCart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+            EasyCart
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            type="button"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="tracking.html">
+                Track Order
+            </a>
+
+            <a href="my-orders.html">
+                My Orders
+            </a>
+
+            <a href="cart.html" class="cart-nav">
+
+                🛒 Cart
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="page-header">
+
+        <h1>
+            My Orders
+        </h1>
+
+        <p>
+            View your recent EasyCart orders
+            and check their delivery status.
+        </p>
+
+    </section>
+
+
+    <main class="section-container">
+
+
+        <div class="orders-list">
+
+
+            <!-- ORDER 1 -->
+
+            <article class="order-card">
+
+
+                <div class="order-card-header">
+
+
+                    <div>
+
+                        <span class="order-label">
+                            ORDER ID
+                        </span>
+
+                        <h3>
+                            #EC10025
+                        </h3>
+
+                    </div>
+
+
+                    <span class="status-badge status-delivery">
+
+                        Out for Delivery
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="order-details-grid">
+
+
+                    <div>
+
+                        <span>
+                            Order Date
+                        </span>
+
+                        <strong>
+                            18 July 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Products
+                        </span>
+
+                        <strong>
+                            6 Items
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Total Amount
+                        </span>
+
+                        <strong>
+                            ₹845
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="order-actions">
+
+
+                    <a
+                        href="tracking.html"
+                        class="primary-btn">
+
+                        Track Order
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ORDER 2 -->
+
+            <article class="order-card">
+
+
+                <div class="order-card-header">
+
+
+                    <div>
+
+                        <span class="order-label">
+                            ORDER ID
+                        </span>
+
+                        <h3>
+                            #EC10012
+                        </h3>
+
+                    </div>
+
+
+                    <span class="status-badge status-delivered">
+
+                        Delivered
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="order-details-grid">
+
+
+                    <div>
+
+                        <span>
+                            Order Date
+                        </span>
+
+                        <strong>
+                            12 July 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Products
+                        </span>
+
+                        <strong>
+                            9 Items
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Total Amount
+                        </span>
+
+                        <strong>
+                            ₹1,240
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="order-actions">
+
+
+                    <a
+                        href="products.html"
+                        class="secondary-btn">
+
+                        Order Again
+
+                    </a>
+
+
+                    <a
+                        href="reviews.html"
+                        class="primary-btn">
+
+                        Write Review
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ORDER 3 -->
+
+            <article class="order-card">
+
+
+                <div class="order-card-header">
+
+
+                    <div>
+
+                        <span class="order-label">
+                            ORDER ID
+                        </span>
+
+                        <h3>
+                            #EC09985
+                        </h3>
+
+                    </div>
+
+
+                    <span class="status-badge status-delivered">
+
+                        Delivered
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="order-details-grid">
+
+
+                    <div>
+
+                        <span>
+                            Order Date
+                        </span>
+
+                        <strong>
+                            5 July 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Products
+                        </span>
+
+                        <strong>
+                            4 Items
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Total Amount
+                        </span>
+
+                        <strong>
+                            ₹560
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="order-actions">
+
+                    <a
+                        href="products.html"
+                        class="secondary-btn">
+
+                        Order Again
+
+                    </a>
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="copyright">
+
+            <p>
+                &copy; 2026 EasyCart.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | EasyCart</title>
+    <title>Customer Reviews | EasyCart</title>
 
     <link rel="stylesheet"
           href="style.css">
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
 
 <nav class="navbar">
 
@@ -51,11 +52,11 @@
 
 <section class="page-header">
 
-    <h1>Contact Us</h1>
+    <h1>Customer Reviews</h1>
 
     <p>
-        Have questions about your order,
-        delivery or products? Contact us.
+        See what customers say about
+        their EasyCart shopping experience.
     </p>
 
 </section>
@@ -64,59 +65,65 @@
 <main class="section-container">
 
 
-    <div class="feature-grid">
+    <div class="review-grid">
 
-        <article class="feature-card">
 
-            <div class="feature-icon">📞</div>
+        <article class="review-card">
 
-            <h3>Call Us</h3>
+            <div class="stars">
+                ★★★★★
+            </div>
 
             <p>
-                +91 XXXXX XXXXX
+                Fresh vegetables and a very
+                convenient shopping experience.
             </p>
+
+            <h3>Priya Sharma</h3>
+
+            <span>
+                Verified Customer
+            </span>
 
         </article>
 
 
-        <article class="feature-card">
+        <article class="review-card">
 
-            <div class="feature-icon">✉️</div>
-
-            <h3>Email Us</h3>
+            <div class="stars">
+                ★★★★☆
+            </div>
 
             <p>
-                support@easycart.com
+                Good variety of grocery products
+                and reasonable prices.
             </p>
+
+            <h3>Rahul Verma</h3>
+
+            <span>
+                Verified Customer
+            </span>
 
         </article>
 
 
-        <article class="feature-card">
+        <article class="review-card">
 
-            <div class="feature-icon">🕒</div>
-
-            <h3>Working Hours</h3>
-
-            <p>
-                Monday - Saturday
-                <br>
-                8:00 AM - 10:00 PM
-            </p>
-
-        </article>
-
-
-        <article class="feature-card">
-
-            <div class="feature-icon">🎧</div>
-
-            <h3>Customer Support</h3>
+            <div class="stars">
+                ★★★★★
+            </div>
 
             <p>
-                Order, delivery and
-                product assistance.
+                Easy ordering process and
+                helpful customer service.
             </p>
+
+            <h3>Neha Singh</h3>
+
+            <span>
+                Verified Customer
+            </span>
 
         </article>
 
@@ -125,50 +132,43 @@
 
     <form class="form-card">
 
-        <h2>Send Us a Message</h2>
+        <h2>Write a Review</h2>
 
 
-        <label for="name">
-            Full Name
+        <label>
+            Your Name
         </label>
 
         <input type="text"
-               id="name"
-               placeholder="Enter your name"
                required>
 
 
-        <label for="email">
-            Email Address
+        <label>
+            Rating
         </label>
 
-        <input type="email"
-               id="email"
-               placeholder="Enter your email"
-               required>
+        <select>
+
+            <option>5 Stars</option>
+            <option>4 Stars</option>
+            <option>3 Stars</option>
+            <option>2 Stars</option>
+            <option>1 Star</option>
+
+        </select>
 
 
-        <label for="phone">
-            Phone Number
+        <label>
+            Your Review
         </label>
 
-        <input type="tel"
-               id="phone"
-               placeholder="Enter your phone number">
-
-
-        <label for="message">
-            Message
-        </label>
-
-        <textarea id="message"
-                  placeholder="How can we help you?"
-                  required>
+        <textarea
+            placeholder="Share your experience">
         </textarea>
 
 
         <button type="submit">
-            Send Message
+            Submit Review
         </button>
 
     </form>

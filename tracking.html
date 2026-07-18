@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Track Order | EasyCart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+            EasyCart
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="tracking.html">
+                Track Order
+            </a>
+
+            <a href="my-orders.html">
+                My Orders
+            </a>
+
+            <a href="cart.html" class="cart-nav">
+
+                🛒 Cart
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="page-header">
+
+        <h1>
+            Track Your Order
+        </h1>
+
+        <p>
+            Enter your order number to check
+            your current delivery status.
+        </p>
+
+    </section>
+
+
+    <main class="section-container">
+
+
+        <form
+            id="tracking-form"
+            class="form-card">
+
+
+            <h2>
+                Find Your Order
+            </h2>
+
+
+            <label for="tracking-order-id">
+                Order ID
+            </label>
+
+            <input
+                type="text"
+                id="tracking-order-id"
+                placeholder="Example: EC10025"
+                required
+            >
+
+
+            <label for="tracking-mobile">
+                Mobile Number
+            </label>
+
+            <input
+                type="tel"
+                id="tracking-mobile"
+                placeholder="Enter your mobile number"
+                required
+            >
+
+
+            <button type="submit">
+                Track Order
+            </button>
+
+        </form>
+
+
+        <!-- JAVASCRIPT RESULT -->
+
+        <section
+            id="tracking-result"
+            class="tracking-result">
+
+            <div class="tracking-placeholder">
+
+                <div class="tracking-placeholder-icon">
+                    📦
+                </div>
+
+                <h2>
+                    Enter Your Order Details
+                </h2>
+
+                <p>
+                    Your tracking information will
+                    appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="copyright">
+
+            <p>
+                &copy; 2026 EasyCart.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

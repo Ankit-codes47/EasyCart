@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Delivery Address | EasyCart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">
+            EasyCart
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            type="button"
+            onclick="toggleMenu()">
+
+            ☰
+
+        </button>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html" class="cart-nav">
+
+                🛒 Cart
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </a>
+
+            <a href="my-orders.html">
+                My Orders
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="page-header">
+
+        <h1>
+            Delivery Address
+        </h1>
+
+        <p>
+            Enter the address where you want
+            your grocery order delivered.
+        </p>
+
+    </section>
+
+
+    <main class="section-container">
+
+
+        <form
+            id="address-form"
+            class="form-card">
+
+
+            <h2>
+                Add Delivery Address
+            </h2>
+
+
+            <label for="address-name">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="address-name"
+                placeholder="Enter full name"
+                required
+            >
+
+
+            <label for="address-mobile">
+                Mobile Number
+            </label>
+
+            <input
+                type="tel"
+                id="address-mobile"
+                placeholder="Enter mobile number"
+                required
+            >
+
+
+            <div class="form-row">
+
+
+                <div>
+
+                    <label for="house-number">
+                        House / Flat Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="house-number"
+                        placeholder="House number"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="pincode">
+                        PIN Code
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pincode"
+                        placeholder="PIN code"
+                        maxlength="6"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+            <label for="address-area">
+                Road / Street / Area
+            </label>
+
+            <input
+                type="text"
+                id="address-area"
+                placeholder="Enter your area"
+                required
+            >
+
+
+            <label for="landmark">
+                Landmark
+            </label>
+
+            <input
+                type="text"
+                id="landmark"
+                placeholder="Nearby landmark (optional)"
+            >
+
+
+            <div class="form-row">
+
+
+                <div>
+
+                    <label for="city">
+                        City
+                    </label>
+
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Enter city"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="state">
+                        State
+                    </label>
+
+                    <input
+                        type="text"
+                        id="state"
+                        placeholder="Enter state"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+            <label for="address-type">
+                Address Type
+            </label>
+
+            <select id="address-type">
+
+                <option value="Home">
+                    🏠 Home
+                </option>
+
+                <option value="Work">
+                    💼 Work
+                </option>
+
+                <option value="Other">
+                    📍 Other
+                </option>
+
+            </select>
+
+
+            <p
+                id="address-message"
+                class="form-message">
+            </p>
+
+
+            <button type="submit">
+                Save Address
+            </button>
+
+
+        </form>
+
+
+        <!-- SAVED ADDRESS -->
+
+        <section
+            id="saved-address-section"
+            class="saved-address-section">
+
+
+            <h2>
+                Saved Address
+            </h2>
+
+
+            <div id="saved-address">
+
+                <p>
+                    You have not saved an address yet.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="copyright">
+
+            <p>
+                &copy; 2026 EasyCart.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

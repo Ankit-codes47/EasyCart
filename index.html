@@ -1,58 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width,
-    initial-scale=1.0">
-    <title>Kasaudhan Grocery Store</title>
-    <link rel="icon" type="png" href="icon.png">
-    <link rel="stylesheet" href="index.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="EasyCart - Shop fresh groceries, fruits, vegetables, dairy products, snacks, beverages and household essentials online."
+    >
+
+    <title>EasyCart | Online Grocery Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <!--header section-->
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
     <header>
-    <hr>
-    <h1>Kasaudhan Grocery Store</h1> 
-    <hr>       
-    <img src="logo.png" alt="Kasaudhan Grocery Store Logo">
-    <hr>
-    <table>
-        <tr>
-            <td><img src="trust.png" alt="show now"></td>   
-            <td><img src="support.png" alt="show now"></td>
-        </tr>
-    </table>
-    <!-- Navigation menu-->
-    <nav>
-        <a href="products.html">Products</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
+
+        <nav class="navbar">
+
+            <!-- TEXT BRAND ONLY -->
+
+            <a href="index.html" class="brand">
+                EasyCart
+            </a>
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button
+                class="menu-toggle"
+                type="button"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <div class="nav-links">
+
+                <a href="index.html" class="active">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="tracking.html">
+                    Track Order
+                </a>
+
+                <a href="my-orders.html">
+                    My Orders
+                </a>
+
+                <a href="address.html">
+                    Address
+                </a>
+
+                <a href="cart.html" class="cart-nav">
+
+                    🛒 Cart
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </div>
+
+        </nav>
+
     </header>
-    <!--main content-->
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
     <main>
-        <!--hero section-->
-        <section>
-            <hr>
-            <h2>Welcome to Kasaudhan Grocery Store</h2>
-            <hr>
-            <img src="welcome.png" alt="Welcome" width="400" style="display: block; margin: 10px auto;">
-            <img src="allogo.png" alt="shop now"><br>
-            <img src="pure.png" alt="pure veg"><br>
-            <img src="discount5.png" alt="shop now"><br>
-            <img src="discount2.png" alt="shop now"><br>
-            <a href="products.html">Shop Now</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <p class="bottom-para">You'll find a wide ranof products to meet your daily needs.Fresh groceries deliverd to your doorstep.</p>
+
+
+        <!-- =========================================
+             HERO SECTION
+        ========================================== -->
+
+        <section class="hero">
+
+
+            <!-- HERO TEXT -->
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    FRESH GROCERIES DELIVERED
+                </span>
+
+                <h1>
+
+                    Groceries Made
+
+                    <span>
+                        Simple.
+                    </span>
+
+                </h1>
+
+                <p>
+                    Shop fresh fruits, vegetables,
+                    dairy products, snacks, beverages
+                    and everyday household essentials
+                    from EasyCart.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="products.html"
+                        class="primary-btn"
+                    >
+                        Shop Now
+                    </a>
+
+                    <a
+                        href="cart.html"
+                        class="secondary-btn"
+                    >
+                        🛒 View Cart
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 LARGE HERO LOGO
+                 ONLY LOGO USED ON THIS PAGE
+            ========================================== -->
+
+            <div class="hero-visual">
+
+                <div class="hero-logo-circle">
+
+                    <img
+                        src="logo.png"
+                        alt="EasyCart Grocery Store Logo"
+                    >
+
+                </div>
+
+            </div>
+
+
         </section>
+
+
+        <!-- =========================================
+             WHY EASYCART
+        ========================================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span>
+                    WHY EASYCART?
+                </span>
+
+                <h2>
+                    Grocery Shopping Made Better
+                </h2>
+
+                <p>
+                    Everything you need for a simple,
+                    convenient and reliable grocery
+                    shopping experience.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🥬
+                    </div>
+
+                    <h3>
+                        Fresh Products
+                    </h3>
+
+                    <p>
+                        Shop quality fruits, vegetables
+                        and everyday grocery products.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        💰
+                    </div>
+
+                    <h3>
+                        Affordable Prices
+                    </h3>
+
+                    <p>
+                        Find everyday grocery essentials
+                        at affordable and competitive prices.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🚚
+                    </div>
+
+                    <h3>
+                        Fast Delivery
+                    </h3>
+
+                    <p>
+                        Get your selected grocery products
+                        delivered directly to your address.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🎧
+                    </div>
+
+                    <h3>
+                        Customer Support
+                    </h3>
+
+                    <p>
+                        Get assistance with your products,
+                        orders and delivery information.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PRODUCT CATEGORIES
+        ========================================== -->
+
+        <section class="section category-section">
+
+            <div class="section-heading">
+
+                <span>
+                    SHOP BY CATEGORY
+                </span>
+
+                <h2>
+                    Everything You Need
+                </h2>
+
+                <p>
+                    Explore popular grocery categories
+                    available on EasyCart.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <a
+                    href="products.html"
+                    class="category-card"
+                >
+
+                    <div>
+                        🍎
+                    </div>
+
+                    <h3>
+                        Fresh Fruits
+                    </h3>
+
+                </a>
+
+
+                <a
+                    href="products.html"
+                    class="category-card"
+                >
+
+                    <div>
+                        🥦
+                    </div>
+
+                    <h3>
+                        Vegetables
+                    </h3>
+
+                </a>
+
+
+                <a
+                    href="products.html"
+                    class="category-card"
+                >
+
+                    <div>
+                        🥛
+                    </div>
+
+                    <h3>
+                        Dairy Products
+                    </h3>
+
+                </a>
+
+
+                <a
+                    href="products.html"
+                    class="category-card"
+                >
+
+                    <div>
+                        🍪
+                    </div>
+
+                    <h3>
+                        Snacks
+                    </h3>
+
+                </a>
+
+
+                <a
+                    href="products.html"
+                    class="category-card"
+                >
+
+                    <div>
+                        🥤
+                    </div>
+
+                    <h3>
+                        Beverages
+                    </h3>
+
+                </a>
+
+
+                <a
+                    href="products.html"
+                    class="category-card"
+                >
+
+                    <div>
+                        🧺
+                    </div>
+
+                    <h3>
+                        Household
+                    </h3>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             WEEKEND OFFER
+        ========================================== -->
+
+        <section class="offer">
+
+            <div class="offer-content">
+
+                <span>
+                    WEEKEND SPECIAL
+                </span>
+
+                <h2>
+                    Get Up To 20% Off
+                    Every Weekend
+                </h2>
+
+                <p>
+                    Explore special weekend discounts
+                    on selected EasyCart grocery products.
+                </p>
+
+                <a
+                    href="products.html"
+                    class="white-btn"
+                >
+                    Explore Products
+                </a>
+
+            </div>
+
+
+            <div class="offer-icon">
+                🛍️
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FIRST ORDER OFFER
+        ========================================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span>
+                    NEW CUSTOMER OFFER
+                </span>
+
+                <h2>
+                    Get 50% Off On Your First Order
+                </h2>
+
+                <p>
+                    Create your EasyCart account,
+                    browse your favourite products
+                    and enjoy our special new
+                    customer offer.
+                </p>
+
+            </div>
+
+
+            <div class="center-buttons">
+
+                <a
+                    href="signup.html"
+                    class="primary-btn"
+                >
+                    Create Account
+                </a>
+
+                <a
+                    href="products.html"
+                    class="secondary-btn"
+                >
+                    Browse Products
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             HOW EASYCART WORKS
+        ========================================== -->
+
+        <section class="section how-it-works">
+
+            <div class="section-heading">
+
+                <span>
+                    EASY SHOPPING
+                </span>
+
+                <h2>
+                    How EasyCart Works
+                </h2>
+
+                <p>
+                    Complete your grocery shopping
+                    in four simple steps.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        1. Browse Products
+                    </h3>
+
+                    <p>
+                        Search and filter products
+                        from different grocery categories.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        🛒
+                    </div>
+
+                    <h3>
+                        2. Add To Cart
+                    </h3>
+
+                    <p>
+                        Add your favourite products
+                        and manage their quantities.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        📍
+                    </div>
+
+                    <h3>
+                        3. Add Address
+                    </h3>
+
+                    <p>
+                        Save your preferred delivery
+                        address for your order.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        4. Track Order
+                    </h3>
+
+                    <p>
+                        Check your order status
+                        using the tracking system.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FREE DELIVERY
+        ========================================== -->
+
+        <section class="delivery-banner">
+
+            <div class="delivery-banner-icon">
+                🚚
+            </div>
+
+
+            <div>
+
+                <span>
+                    SPECIAL DELIVERY BENEFIT
+                </span>
+
+                <h2>
+                    Free Delivery On Orders Above ₹200
+                </h2>
+
+                <p>
+                    Add your daily essentials to the
+                    cart and enjoy free delivery on
+                    qualifying orders.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FINAL CALL TO ACTION
+        ========================================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span>
+                    START SHOPPING
+                </span>
+
+                <h2>
+                    Your Daily Essentials
+                    Are Just A Click Away
+                </h2>
+
+                <p>
+                    Browse grocery and household
+                    products available in our
+                    EasyCart store.
+                </p>
+
+            </div>
+
+
+            <div class="center-buttons">
+
+                <a
+                    href="products.html"
+                    class="primary-btn"
+                >
+                    Shop Products
+                </a>
+
+                <a
+                    href="cart.html"
+                    class="secondary-btn"
+                >
+                    🛒 Open Cart
+                </a>
+
+            </div>
+
+        </section>
+
+
     </main>
-    <hr>
+
+
+    <!-- =========================================
+         FOOTER
+         NO LOGO
+    ========================================== -->
+
     <footer>
-        <p>&copy; 2026 Kasaudhan Grocery Store. All rights reserved.</p>
-        <p> Fresh Products - Fast Delivery - Trusted Service</p>
+
+        <div class="footer-grid">
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-about">
+
+                <a
+                    href="index.html"
+                    class="footer-text-brand"
+                >
+                    EasyCart
+                </a>
+
+                <p>
+                    Your convenient online destination
+                    for fresh groceries and everyday
+                    household essentials.
+                </p>
+
+            </div>
+
+
+            <!-- SHOPPING -->
+
+            <div>
+
+                <h3>
+                    Shopping
+                </h3>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="cart.html">
+                    My Cart
+                </a>
+
+                <a href="my-orders.html">
+                    My Orders
+                </a>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+
+            <div>
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="signup.html">
+                    Sign Up
+                </a>
+
+                <a href="address.html">
+                    Delivery Address
+                </a>
+
+            </div>
+
+
+            <!-- ORDERS -->
+
+            <div>
+
+                <h3>
+                    Orders
+                </h3>
+
+                <a href="tracking.html">
+                    Track Order
+                </a>
+
+                <a href="my-orders.html">
+                    Order History
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                &copy; 2026 EasyCart.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
     </footer>
-    <hr>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
 </body>
+
 </html>

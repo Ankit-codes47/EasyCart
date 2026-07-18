@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Cart | EasyCart</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="index.html"
+           class="brand">
+            EasyCart
+        </a>
+
+
+        <button class="menu-toggle"
+                type="button"
+                onclick="toggleMenu()">
+            ☰
+        </button>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="tracking.html">
+                Track Order
+            </a>
+
+            <a href="my-orders.html">
+                My Orders
+            </a>
+
+            <a href="cart.html"
+               class="cart-nav">
+
+                🛒 Cart
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HEADER -->
+    <section class="page-header">
+
+        <h1>
+            Your Shopping Cart
+        </h1>
+
+        <p>
+            Review your products,
+            update quantities and
+            continue to checkout.
+        </p>
+
+    </section>
+
+
+    <!-- CART -->
+    <main class="cart-container">
+
+
+        <div class="cart-layout">
+
+
+            <!-- CART ITEMS -->
+            <section class="cart-items-section">
+
+
+                <div class="cart-title">
+
+                    <h2>
+                        Cart Items
+                    </h2>
+
+
+                    <button type="button"
+                            class="clear-cart-btn"
+                            onclick="clearCart()">
+
+                        Clear Cart
+
+                    </button>
+
+                </div>
+
+
+                <div id="cart-items"
+                     class="cart-items">
+
+                    <!-- Cart products added by JavaScript -->
+
+                </div>
+
+
+            </section>
+
+
+            <!-- ORDER SUMMARY -->
+            <aside class="cart-summary">
+
+
+                <h2>
+                    Order Summary
+                </h2>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <span id="subtotal">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <span id="delivery">
+                        FREE
+                    </span>
+
+                </div>
+
+
+                <div class="free-delivery-note">
+
+                    Free delivery on orders
+                    of ₹200 or more.
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="summary-row cart-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <span id="total">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <a href="address.html"
+                   class="checkout-btn">
+
+                    Proceed to Checkout
+
+                </a>
+
+
+                <a href="products.html"
+                   class="continue-shopping">
+
+                    ← Continue Shopping
+
+                </a>
+
+
+            </aside>
+
+
+        </div>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="copyright">
+
+            <p>
+                &copy; 2026 EasyCart.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

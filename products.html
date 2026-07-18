@@ -1,247 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link rel="icon" type="png" href="icon.png">
-    <link rel="stylesheet" href="products.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Products | EasyCart</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
+
 <body>
-    <!--header section-->
-    <header>
-    <h1>Kasaudhan Grocery Store</h1>
-    <img src="logo.png" alt="Kasaudhan Grocery Store" class="logo">
-    <!-- Navigation menu-->
-    <nav>
-        <a href="Home.html">Home</a>
-        <a href="About.html">About Us</a>
-        <a href="Contact.html">Contact Us</a>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="index.html"
+           class="brand">
+            EasyCart
+        </a>
+
+        <button class="menu-toggle"
+                type="button"
+                onclick="toggleMenu()">
+            ☰
+        </button>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="tracking.html">
+                Track Order
+            </a>
+
+            <a href="reviews.html">
+                Reviews
+            </a>
+
+            <a href="faq.html">
+                FAQ
+            </a>
+
+            <a href="my-orders.html">
+                My Orders
+            </a>
+
+            <a href="address.html">
+                Address
+            </a>
+
+            <a href="cart.html"
+               class="cart-nav">
+
+                🛒 Cart
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="signup.html"
+               class="signup-btn">
+                Sign Up
+            </a>
+
+        </div>
+
     </nav>
-    </header>
-    <!--main section-->
-    <section>
-        <h2>Our Products</h2>
-        <p><b><u>Fresh products delivered to your doorstep.</u></b></p>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+
+        <h1>
+            Shop Groceries
+        </h1>
+
+        <p>
+            Browse 40 everyday grocery,
+            food and household products.
+        </p>
+
     </section>
-    <!--search section-->
-    <section>
-        <input type="text" placeholder="Search for products..." style="width: 300px; padding: 10px; margin-top: 20px;">
-        <button>search</button>
-    </section>
-        <!--hero section-->
-    <section>
-        <h2>Welcome to Kasaudhan Grocery Store</h2>
-        <div class="flexbox">
-            <img src="allogo.png" alt="shop now">
-            <img src="discount5.png" alt="50% discount">
-            <img src="pure.png" alt="pure veg">
-            <img src="discount2.png" alt="20% discount">
-        </div>
-    </section>
-    <!-- products category-->
-    <section>
-        <h3>Categories</h3>
-        <ul>
-            <li>Fruits</li>
-            <li>Vegetables</li>
-            <li>Dairy Products</li>
-            <li>Snacks</li>
-            <li>Beverages</li>
-            <li>Bakery</li>
-            <li>dry Fruits</li>
-            <li>Cold Drinks</li>
-            <li>Frozen Foods</li>
-        </ul>
-    </section>
-    <!--products section-->
-    <p class="para">Fruits Section</p>
-    <div class="flexbox">    
-        <article class="left">
-            <div class="product-card">
-                <img src="apple.png" alt="Apple" class="source">
-                <div class="product-info">
-                    <h4 class="product-title">Fresh Apples</h4>
-                    <p class="product-description">Juicy and sweet apple,<br>perfect for snacking or<br>baking.</p>
-                    <p class="product-category">Category: Fruits</p>
-                    <p class="product-price">Price:120/kg</p>
-                    <p class="product-discount">10% off</p>
-                    <p class="product-stock">Stock: Available</p>
-                    <p class="product-rating">rating: 4.5/5</p>
-                    <button class="cart-button">
-                    <i class="fas fa-shopping-cart"></i>
-                    Add To Cart</button>
-                <div>
-            </div>  
-        </article>
-        <article class="left">
-            <div class="product-card">
-                <img src="banana.png" alt="Banana" class="source">
-                <div class="product-info">
-                    <h4 class="prduct-title">FreshBananas</h4>              
-                    <p class="product-description">Rich in potassium and natural<br>sugars,perfect for a quick<br>energy boost.</p>
-                    <p class="product-category">Category: Fruits</p>
-                    <p class="product-price">Price:80/kg</p>
-                    <p class="product-discount">15% off</p>
-                    <p class="product-stock">Stock: Available</p>
-                    <p class="product-rating">rating: 4.5/5</p>
-                    <button class="cart-button">
-                    <i class="fas fa-shopping-cart"></i>
-                    Add To Cart
-                    </button>
-                </div>
+
+
+    <main>
+
+
+        <!-- SEARCH AND FILTER -->
+        <section class="product-search">
+
+            <input type="search"
+                   id="product-search"
+                   placeholder="Search for products...">
+
+
+            <select id="category-filter">
+
+                <option value="All">
+                    All Categories
+                </option>
+
+                <option value="Fruits">
+                    Fruits
+                </option>
+
+                <option value="Vegetables">
+                    Vegetables
+                </option>
+
+                <option value="Dairy">
+                    Dairy
+                </option>
+
+                <option value="Bakery">
+                    Bakery
+                </option>
+
+                <option value="Snacks">
+                    Snacks
+                </option>
+
+                <option value="Beverages">
+                    Beverages
+                </option>
+
+                <option value="Staples">
+                    Staples
+                </option>
+
+                <option value="Dry Fruits">
+                    Dry Fruits
+                </option>
+
+                <option value="Household">
+                    Household
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <!-- PRODUCTS -->
+        <section class="products-section">
+
+            <div id="products-grid"
+                 class="products-grid">
+
+                <!-- Products are added by JavaScript -->
+
             </div>
-        </article>
-    </div>
-    <p class="para">Vegetables Section</p>
-    <div class="flexbox">
-        <article class="left">
-            <div class="product-card">
-                <img src="potato.png" alt="Potato" class="source">
-                <div class="product-info">
-                    <h4 class="product-title">Fresh Potatoes</h4>
-                    <p class="product-description">Starchy and versatile,  perfect for mashing or roasting.</p>
-                    <p class="product-category">Category: Vegetables</p>
-                    <p class="product-price">Price:40/kg</p>
-                    <p class="product-discount">20% off</p>
-                    <p class="product-stock">Stock: Available</p>
-                    <P class="product-rating">rating: 4.5/5</P>
-                    <button class="cart-button">
-                    <i class="fas fa-shopping-cart"></i>
-                    Add To Cart
-                    </button>
-                </div>
-            </div>
-        </article>
-        <article class="left">
-            <div class="product-card">
-                <img src="lady.png" alt="Ladyfingers" class="source">
-                <div class="product-info">
-                    <h4 class="product-title">Fresh Ladyfingers</h4>
-                    <p class="product-description">Delicious and tender ladyfingers,<br>for desserts or snacking.</p>
-                    <p class="product-category">Category: Vegetables</p>
-                    <p class="product-price">Price:40/kg</p>
-                    <p class="product-discount">10% off</p>
-                    <p class="product-stock">Stock: Available</p>
-                    <P class="product-rating">rating: 4.5/5</P>
-                    <button class="cart-button">
-                    <i class="fas fa-shopping-cart"></i>
-                    Add To Cart
-                    </button>
-                </div>
-            </div>
-        </article>
-    </div>
-    <p class="para">Dairy Products Section</p>
-    <div class="flexbox">
-        <article class="left">
-            <div class="product-card">
-                <img src="milk.png" alt="Milk" class="source">
-                <div class="product-info">
-                    <h4 class="product-title">Fresh Milk</h4>
-                    <p class="product-description">Rich and creamy milk, perfect for drinking or cooking.</p>
-                    <p class="product-category">Category: Dairy Products</p>
-                    <p class="product-price">Price:80/liter</p>
-                    <p class="product-discount">15% off</p>
-                    <p class="product-stock">Stock: Available</p>
-                    <P class="product-rating">rating: 4.5/5</P>
-                    <button class="cart-button">
-                    <i class="fas fa-shopping-cart"></i>Add To Cart
-                    </button>
-                </div>
-            </div>    
-        </article>
-        <article class="left">
-            <div class="product-card">
-                <img src="butter.png" alt="Butter" class="source">
-                <div class="product-info">
-                    <h4 class="product-title">Fresh Butter</h4>
-                    <p class="product-description">Rich and creamy butter, perfect for cooking or baking.</p>
-                    <p class="product-category">Category: Dairy Products</p>
-                    <p class="product-price">Price:200/kg</p>
-                    <p class="product-discount">Discount: 10% off</p>
-                    <p class="product-stock">Stock: Available</p>
-                    <P class="product-rating">rating: 4.5/5</P>
-                    <button class="cart-button">
-                        <i class="fas fa-shopping-cart"></i>
-                        Add To Cart
-                    </button>
-                </div>
-            </div>
-        </article>
-    </div>
-    <p class="para">Snacks Section</p>
-    <div class="flexbox">
-        <article class="left">
-            <div class="product-card">
-                <img src="chips.png" alt="Chips" class="source">
-                <div class="product-info">
-                    <h4 class="product-title">Fresh Chips</h4>
-                    <p class="product-description" >Crispy and delicious chips, perfect for snacking.</p>
-                    <p class="product-category">Category: Snacks</p>
-                    <p class="product-price">Price:50/packet</p>
-                    <p class="product-discount">Discount: 20% off</p>
-                    <p class="product-stock">Stock: Available</p>
-                    <P class="product-rating">rating: 4.5/5</P>
-                    <button class="cart-button">
-                        <i class="fas fa-shopping-cart"></i>
-                        Add To Cart
-                    </button>
-                </div>
-            </div>
-        </article>
-    </div>
-    <!-- seller rank -->
-    <hr>
-    <section>
-        <div>
-            <h2>Best Sellers</h2>
-            <hr>
-            <p><b>Check out our most popular products that our customers love!</b></p>
-        </div>
-        <!--Prducts cards here -->
-        <ul>
-            <li>Apples</li>
-            <li>Bananas</li>
-            <li>Potatoes</li>  
-            <li>Milk</li>
-            <li>Butter</li>
-            <li>Chips</li>
-            <li>Biscuits</li>
-            <li>Cold Drinks</li>
-            <li>Dry Fruits</li>
-        </ul>
-        <img  class="float" src="best.png" alt="Best Sellers">
-    </section>
-    <!-- shop with us -->
-    <hr>
-    <section>
-        <div>
-            <h2>Why shop with us?</h2>
-            <hr>
-            <img src="whyshopwithus.png" alt="why shop with uss">
-            <b>
-                <p>We offer the best quality products at competitive prices.</p>
-                <p>Our products are sourced from trusted suppliers and are always fresh.</p>
-                <p>We offer fast and reliable delivery to your doorstep.</p>
-                <p>Our customer service team is always ready to assist you with any queries or concerns</p>
-            </b>
-        </div>
-    </section>
-    <!--bottom nevigation menu-->
-    <nav>
-        <a href="index.html" id="fix">Back To Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-    <!--copyrigth section-->
-    <hr>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Kasaudhan Grocery Store. All rights reserved.</p>
-        <p> Fresh Products - Fast Delivery - Trusted Service</p>
+
+        <div class="copyright">
+
+            <p>
+                &copy; 2026 EasyCart.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Fresh Products • Fast Delivery
+            </p>
+
+        </div>
+
     </footer>
-    <hr>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
